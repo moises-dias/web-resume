@@ -1,0 +1,22 @@
+<!-- <div fxLayout="row" fxLayoutAlign='space-evenly'>
+    <div>1. One</div>
+    <div>2. Two</div>
+    <div>3. Three</div>
+    <div>4. Four</div>
+</div>
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+
+<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="16px" gdRows="1fr 4fr 8fr" gdColumns='1fr 1fr 2fr 1fr' [ngStyle]="{'background-color': 'chocolate', 'height' : '100vh'}">
+    <div class='name' gdArea="name" [ngStyle]="{'background-color': 'lightblue'}" >
+        name
+    </div>
+    <div class='picture' gdArea="picture" [ngStyle]="{'background-color': 'cadetblue'}">
+        Side
+    </div>
+    <div class='info' gdArea="info" [ngStyle]="{'background-color': 'coral'}">
+        Content
+    </div>
+    <div class='letter' gdArea="letter" [ngStyle]="{'background-color': 'darkcyan'}">
+        letter
+    </div>
+</div>
