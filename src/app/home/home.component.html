@@ -6,17 +6,17 @@
 </div>
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
 
-<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="16px" gdRows="1fr 4fr 8fr" gdColumns='1fr 1fr 2fr 1fr' [ngStyle]="{'background-color': 'chocolate', 'height' : '100vh'}">
-    <div class='name' gdArea="name" [ngStyle]="{'background-color': 'lightblue'}" >
-        name
+<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="10px" gdRows="1fr 4fr 8fr" gdColumns='1fr 1fr 2fr 1fr' [ngStyle]="{'background-color': 'chocolate', 'height' : '100vh'}">
+    <div class='name' gdArea="name" [ngStyle]="{'background-color': 'lightblue', 'border-radius': '5px'}" >
+        Name
     </div>
-    <div class='picture' gdArea="picture" [ngStyle]="{'background-color': 'cadetblue'}">
+    <div class='picture' gdArea="picture" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px'}">
         Side
     </div>
-    <div class='info' gdArea="info" [ngStyle]="{'background-color': 'coral'}">
+    <div class='info' gdArea="info" [ngStyle]="{'background-color': 'coral', 'border-radius': '5px'}">
         Content
     </div>
-    <div class='letter' gdArea="letter" [ngStyle]="{'background-color': 'darkcyan'}">
+    <div class='letter' gdArea="letter" [ngStyle]="{'background-color': 'darkcyan', 'border-radius': '5px'}">
         letter
     </div>
 </div>
