@@ -6,17 +6,31 @@
 </div>
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
 
-<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="10px" gdRows="1fr 4fr 8fr" gdColumns='1fr 1fr 2fr 1fr' [ngStyle]="{'background-color': 'chocolate', 'height' : '100vh'}">
-    <div class='name' gdArea="name" [ngStyle]="{'background-color': 'lightblue', 'border-radius': '5px'}" >
-        Name
+<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="10px" gdRows="Auto 4fr 8fr"
+    gdColumns='1fr 1fr 2fr 1fr' [ngStyle]="{'background-color': 'pink', 'height' : '100vh'}">
+    <div class='name' gdArea="name" [ngStyle]="{'background-color': 'lightblue', 'border-radius': '5px'}">
+        <h2 class="mat-title">Name Surname (centralizar h e v)</h2>
     </div>
-    <div class='picture' gdArea="picture" [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px'}">
+    <div class='picture' gdArea="picture"
+        style="background-image: url(https://2x1dks3q6aoj44bz1r1tr92f-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/Square-face-shape-bespke-unit-Bordered-700x700.png)"
+        [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px'}">
         Side
     </div>
     <div class='info' gdArea="info" [ngStyle]="{'background-color': 'coral', 'border-radius': '5px'}">
-        Content
+
+
+        <div style="background-image: url(https://icon-icons.com/icons2/285/PNG/32/social_facebook_box_blue_256_30649.png)"
+            [ngStyle]="{'background-color': 'cadetblue', 'height': '32px', 'width': '32px', 'margin': '0', 'padding': '0'}">
+        </div>
+
+        
     </div>
     <div class='letter' gdArea="letter" [ngStyle]="{'background-color': 'darkcyan', 'border-radius': '5px'}">
-        letter
+
+        <button color='primary' mat-raised-button>Hello World</button>
+        <button color='error' mat-raised-button>
+            jjj
+        </button>
+
     </div>
 </div>

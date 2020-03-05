@@ -1,0 +1,9 @@
+.picture {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mat-title {
+    padding: 5px;
+    margin: 5px;
+}
