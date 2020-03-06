@@ -1,7 +1,172 @@
 <div [ngStyle]="{'background-color': 'dodgerblue', 'height' : '100vh', 'border-radius': '5px'}">
-    <mat-tab-group [ngStyle]="{'border-radius': '5px'}">
-        <mat-tab label="Graduation"><div [ngStyle]="{'background-color': 'aquamarine', 'height' : '100vh'}"></div></mat-tab>
-        <mat-tab label="Languages"><div [ngStyle]="{'background-color': 'crimson', 'height' : '100vh'}"></div></mat-tab>
-        <mat-tab label="Skills"><div [ngStyle]="{'background-color': 'aquamarine', 'height' : '100vh'}"></div></mat-tab>
-    </mat-tab-group>
+
+    <div gdAreas=". school language .|. school skills .|. school skills ." gdGap="10px" gdRows="190px auto auto" gdColumns='.3fr 1fr 288px .3fr'
+        [ngStyle]="{'background-color': 'pink', 'height' : '100vh'}">
+
+        <div class='school' gdArea="school" [ngStyle]="{'background-color': 'blueviolet', 'border-radius': '5px'}"
+            gdAreas="image image | description description" gdGap="10px" gdRows="1fr 2fr" gdColumns='1fr 1fr'>
+
+            <div class='image' gdArea="image" [ngStyle]="{'background-color': 'chartreuse', 'border-radius': '5px'}">
+                <div class="accordion" [ngStyle]="{'border-radius': '5px'}"
+                    style="background-image: url(https://rbj.com.br/wp-content/uploads/2020/01/UTFPR-1-1140x640.jpg)">
+                </div>
+            </div>
+            <div class='description' gdArea="description"
+                [ngStyle]="{'background-color': 'cornflowerblue', 'border-radius': '5px'}">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore laboriosam incidunt, doloribus porro
+                tempora pariatur fugit? Obcaecati, neque a. A in nisi iusto saepe eligendi voluptatibus nobis fugit
+                doloribus quisquam?
+                Sunt totam ipsa, impedit quia sequi, quis assumenda similique id consequuntur nihil eveniet vero quidem
+                velit quod delectus iusto? Aut et vero nisi debitis pariatur beatae nemo atque sunt doloribus.
+                Distinctio dolor qui velit libero maiores fugit magni veniam suscipit inventore, modi aliquam numquam
+                minima ratione dignissimos! Facilis, atque repellat veritatis placeat, delectus nostrum quisquam culpa,
+                eaque commodi possimus tempora!
+            </div>
+        </div>
+        <div class='language' gdArea="language" [ngStyle]="{'background-color': 'khaki', 'border-radius': '5px'}">
+
+            <div class="english" fxLayout='row' fxLayoutAlign='space-evenly center' fxLayoutGap='5px'>
+                <div style="background-image: url(https://icon-icons.com/icons2/107/PNG/48/usa_18285.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '48px', 'width': '48px' , 'border-radius': '5px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+            </div>
+            <div class="french" fxLayout='row' fxLayoutAlign='space-evenly center' fxLayoutGap='5px'>
+                <div style="background-image: url(https://icon-icons.com/icons2/107/PNG/48/france_18287.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '48px', 'width': '48px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+            </div>
+            <div class="japanese" fxLayout='row' fxLayoutAlign='space-evenly center' fxLayoutGap='5px'>
+                <div style="background-image: url(https://icon-icons.com/icons2/107/PNG/48/russia_18281.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '48px', 'width': '48px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+            </div>
+            <div class="russian" fxLayout='row' fxLayoutAlign='space-evenly center' fxLayoutGap='5px'>
+                <div style="background-image: url(https://icon-icons.com/icons2/107/PNG/48/japan_18276.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '48px', 'width': '48px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6338.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+                <div style="background-image: url(https://icon-icons.com/icons2/39/PNG/32/favoritesilver_star_favorite_6337.png)"
+                    [ngStyle]="{'background-color': 'lightblue', 'height': '32px', 'width': '32px'}">
+                </div>
+            </div>
+
+        </div>
+        <div class='skills' fxLayout='row wrap' gdArea="skills" fxLayoutAlign='start start'
+            [ngStyle]="{'background-color': 'lightblue', 'border-radius': '5px'}">
+
+            <div style="background-image: url(https://icon-icons.com/icons2/2108/PNG/96/angular_icon_130993.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/2107/PNG/96/file_type_css_icon_130661.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/2107/PNG/96/file_type_html_icon_130541.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/2107/PNG/96/file_type_js_official_icon_130509.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/512/PNG/96/vc-git_icon-icons.com_50729.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/112/PNG/96/python_18894.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/2107/PNG/96/file_type_vue_icon_130078.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/2108/PNG/96/react_icon_130845.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/159/PNG/96/arduino_22429.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/1381/PNG/96/com_94184.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/512/PNG/96/dbs-hadoop_icon-icons.com_50912.png)"
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div style="background-image: url(https://icon-icons.com/icons2/2107/PNG/96/file_type_mongo_icon_130383.png)"
+                [ngStyle]="{'background-color': 'blue', 'height': '96px', 'width': '96px'}">
+            </div>
+            <div
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px', 'overflow': 'hidden', 'border-radius': '5px'}">
+                <img src="https://www.raddevelopers.com/wp-content/uploads/2016/01/c-lang-2.png"
+                [ngStyle]="{'height': '100%'}">
+            </div>
+            <div
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px', 'overflow': 'hidden', 'border-radius': '5px'}">
+                <img src="https://www.raddevelopers.com/wp-content/uploads/2016/01/c-lang-1.png"
+                [ngStyle]="{'height': '100%'}">
+            </div>
+            <div
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px', 'overflow': 'hidden', 'border-radius': '5px'}">
+                <img src="https://cdn.instructables.com/FBZ/NSNM/JNULDUZI/FBZNSNMJNULDUZI.LARGE.jpg?auto=webp&frame=1"
+                [ngStyle]="{'height': '100%'}">
+            </div>
+            <div
+                [ngStyle]="{'background-color': 'lightblue', 'height': '96px', 'width': '96px', 'overflow': 'hidden', 'border-radius': '5px'}">
+                <img src="https://www.raddevelopers.com/wp-content/uploads/2016/01/c-lang.png"
+                [ngStyle]="{'height': '100%'}">
+            </div>
+            
+        </div>
+    </div>
 </div>

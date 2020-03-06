@@ -6,31 +6,69 @@
 </div>
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
 
-<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="10px" gdRows="Auto 4fr 8fr"
-    gdColumns='1fr 1fr 2fr 1fr' [ngStyle]="{'background-color': 'pink', 'height' : '100vh'}">
+<div gdAreas=". name info . | . picture info . | . letter letter ." gdGap="10px" gdRows="Auto 200px 8fr"
+    gdColumns='1fr 200px 2fr 1fr' [ngStyle]="{'background-color': 'pink', 'height' : 'auto'}">
     <div class='name' gdArea="name" [ngStyle]="{'background-color': 'lightblue', 'border-radius': '5px'}">
-        <h2 class="mat-title">Name Surname (centralizar h e v)</h2>
+        <h2 class="mat-title">Tyler Durden</h2>
     </div>
     <div class='picture' gdArea="picture"
         style="background-image: url(https://2x1dks3q6aoj44bz1r1tr92f-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/Square-face-shape-bespke-unit-Bordered-700x700.png)"
         [ngStyle]="{'background-color': 'cadetblue', 'border-radius': '5px'}">
-        Side
     </div>
-    <div class='info' gdArea="info" [ngStyle]="{'background-color': 'coral', 'border-radius': '5px'}">
+    <div class='info' gdArea="info" [ngStyle]="{'background-color': 'coral', 'border-radius': '5px'}"
+    gdAreas="icon1 description1 | icon2 description2 | icon3 description3 | icon4 description4 | icon5 description5 | icon6 description6 | icon7 description7" 
+    gdGap="10px" gdRows="32px 32px 32px 32px 32px 32px 32px"
+    gdColumns='32px 5fr'>
 
 
-        <div style="background-image: url(https://icon-icons.com/icons2/285/PNG/32/social_facebook_box_blue_256_30649.png)"
-            [ngStyle]="{'background-color': 'cadetblue', 'height': '32px', 'width': '32px', 'margin': '0', 'padding': '0'}">
+        <div gdArea="icon1" style="background-image: url(https://icon-icons.com/icons2/17/PNG/32/personal_private_1935.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
         </div>
-
-        
+        <div gdArea="description1"
+            [ngStyle]="{'background-color': 'darkcyan'}">Tyler Durden
+        </div>
+        <div gdArea="icon2" style="background-image: url(https://icon-icons.com/icons2/285/PNG/32/social_facebook_box_blue_256_30649.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
+        </div>
+        <div gdArea="description2"
+            [ngStyle]="{'background-color': 'darkcyan'}">/tylerdurden123
+        </div>
+        <div gdArea="icon3" style="background-image: url(https://icon-icons.com/icons2/285/PNG/32/social_linkedin_box_blue_256_30641.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
+        </div>
+        <div gdArea="description3"
+            [ngStyle]="{'background-color': 'darkcyan'}">/in/tdurden
+        </div>
+        <div gdArea="icon4" style="background-image: url(https://icon-icons.com/icons2/285/PNG/32/social_skype_box_blue_256_30613.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
+        </div>
+        <div gdArea="description4"
+            [ngStyle]="{'background-color': 'darkcyan'}">live:info_123456
+        </div>
+        <div gdArea="icon5" style="background-image: url(https://icon-icons.com/icons2/1211/PNG/32/1491580658-yumminkysocialmedia06_83104.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
+        </div>
+        <div gdArea="description5"
+            [ngStyle]="{'background-color': 'darkcyan'}">@tylerd21
+        </div>
+        <div gdArea="icon6" style="background-image: url(https://icon-icons.com/icons2/272/PNG/32/Gmail_29991.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
+        </div>
+        <div gdArea="description6"
+            [ngStyle]="{'background-color': 'darkcyan'}">t.durden@gmail.com
+        </div>
+        <div gdArea="icon7" style="background-image: url(https://icon-icons.com/icons2/936/PNG/32/github-sign_icon-icons.com_73545.png)"
+            [ngStyle]="{'background-color': 'lightblue'}">
+        </div>
+        <div gdArea="description7"
+            [ngStyle]="{'background-color': 'darkcyan'}">/ty-durden
+        </div>
     </div>
     <div class='letter' gdArea="letter" [ngStyle]="{'background-color': 'darkcyan', 'border-radius': '5px'}">
-
-        <button color='primary' mat-raised-button>Hello World</button>
-        <button color='error' mat-raised-button>
-            jjj
-        </button>
-
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, facilis corrupti illo excepturi, ipsa suscipit nam tempore quibusdam eligendi amet, recusandae minus nulla quod sint culpa accusantium blanditiis voluptatum iure.
+        Temporibus dolorum, eos molestiae officia voluptatem, dicta dolorem vero assumenda est, iusto non laboriosam eveniet! Repellat incidunt minus sit ducimus adipisci! Assumenda ut error mollitia ad. Optio facere delectus tempora?
+        Ullam eos modi vel necessitatibus rerum. Totam veritatis commodi quam voluptatum fugit architecto similique? Eaque obcaecati, aut suscipit deserunt atque dolorum sed delectus, voluptas at saepe facere unde voluptatem sint!
+        Quia doloribus necessitatibus nobis, facere corrupti provident culpa nam corporis deleniti iste adipisci animi pariatur facilis officiis illo minima distinctio voluptates maxime eum nostrum unde! Et, ipsum. Eos, facilis autem!
+        Eveniet labore repellendus deleniti odit quaerat facere cupiditate? Consequuntur corporis neque amet quos perferendis, natus minus nisi quaerat sint ut quidem laboriosam id tempora voluptatibus velit quod, autem minima reprehenderit?
     </div>
 </div>
